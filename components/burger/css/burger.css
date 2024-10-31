@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserat;
+  font-weight: 600;
+  cursor: default;
+  scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+body {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Muller;
+  src: url("../../../assets/fonts/muller/Fontfabric - MullerExtraBold.otf");
+  font-weight: 700;
+}
+@keyframes openBurger {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes closeBurger {
+  0% {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: 0;
+  }
+}
+.burger-on {
+  animation: openBurger 0.5s, ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
+}
+
+.burger-off {
+  animation: closeBurger 0.5s, ease-in-out;
+  display: none;
+}
+
+.burgermain {
+  position: absolute;
+  right: 10%;
+  top: 70px;
+  width: 350px;
+  height: 186px;
+  background-color: #273a98;
+  border-radius: 0px 0px 10px 10px;
+}
+.burgermain__dataProfile {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: 0;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s ease-out;
+}
+.burgermain__dataProfile:hover {
+  background-color: rgba(145, 130, 165, 0.452);
+}
+.burgermain__dataProfile_nameBlock-text {
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserat;
+  font-weight: 800;
+}
+.burgermain__dataProfile_imgBlock {
+  box-shadow: 0px 12.6px 12.6px 0px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #cacaca;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.burgermain__dataProfile_imgBlock-img {
+  width: 40px;
+  height: 40px;
+}
+.burgermain__ExitButton {
+  padding-left: 4%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  height: 100%;
+  transition: 0.3s ease-out;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: 0;
+  align-items: center;
+}
+.burgermain__ExitButton:hover {
+  background-color: rgba(145, 130, 165, 0.452);
+}
+.burgermain__ExitButton-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: 0;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.burgermain__ExitButton-button-text {
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserat;
+  font-weight: 800;
+}
+.burgermain__ExitButton-button-img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,22 @@
+@import "../../styles/global.scss";
+.content {
+    background-color: #fff;
+    background-image: none;
+    @include flex(column, 0, center);
+    height: 92vh;
+    padding-top: 30px   ;
+}
+
+.content__cards{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+}
+
+.title_cards {
+    font-size: 35px;
+    color: $main_color-blue;
+    font-weight: 900;
+    margin-bottom: 20%;
+}

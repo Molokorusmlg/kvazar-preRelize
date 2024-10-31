@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserat;
+  font-weight: 600;
+  cursor: default;
+  scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+body {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Medium.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Montserat;
+  src: url("../../../assets/fonts/Montserrat-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Muller;
+  src: url("../../../assets/fonts/muller/Fontfabric - MullerExtraBold.otf");
+  font-weight: 700;
+}
+.main__card {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  transition: 0.2s ease-in;
+}
+.main__card:hover {
+  transform: scale(1.05);
+}
+
+.card__img {
+  width: 50px;
+  height: 50px;
+}
+
+.main__card-firstrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #283a97;
+  font-weight: 900;
+}
+
+.card__text {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}

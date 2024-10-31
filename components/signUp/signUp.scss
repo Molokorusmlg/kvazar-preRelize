@@ -1,0 +1,132 @@
+@import "../../styles/global.scss";
+.main {
+  background-color: rgb(231, 231, 231);
+  @include flex(column, center, center);
+  height: 93vh;
+  background: url("../../../assets/signUp_img/bg_img.jpg") no-repeat center
+    center/cover;
+}
+
+.main__signin {
+  height: 45em;
+  width: 40em;
+  @include Container(2%, 2%, 2%, padding);
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @include flex(column, 0, center);
+}
+
+.main__accountbuttons {
+  width: 50%;
+  @include flex(row, center, center);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.main__accountbutton {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.main__select {
+  color: #3348b6;
+}
+
+form {
+  @include flex(column, center, center);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.main__form-input {
+  padding: 20px 5px 20px 5px;
+  border: solid 1px #3c4880b6;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.main__form-select {
+  padding: 20px 5px 20px 5px;
+  border: solid 1px #3c4880b6;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.main__form {
+  width: 70%;
+}
+
+hr {
+  color: #3348b6;
+  border: solid 1px;
+}
+
+.main__accountbuttons-signup {
+  transition: 0.3s ease-out;
+  text-decoration: none !important;
+
+  .isSelectedSecond {
+    opacity: 0%;
+    transition: 0.3s;
+  }
+  &:hover {
+    .main__accountbutton {
+      color: #3348b6;
+    }
+    hr {
+      opacity: 100%;
+    }
+  }
+}
+.main__supportbuttons-form {
+  @include flex(row, center, center);
+  gap: 5px;
+  margin-bottom: 0;
+}
+
+.main__supportbuttons {
+  @include flex(row, space-between, center);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.main__supportbuttons-changepassword {
+  text-decoration: none;
+  color: #3348b6;
+  font-weight: 600;
+}
+
+.main__button {
+  background-color: #3348b6;
+  border: 0;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.main__form__number-Text {
+  color: #121212;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main__politic-text {
+  color: #121212;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+.main__politic-link {
+  text-decoration: none;
+  color: #3348b6;
+  font-size: 13px;
+  &:hover {
+    text-decoration: underline;
+  }
+}

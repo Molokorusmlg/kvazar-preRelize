@@ -1,0 +1,64 @@
+@import "../../styles/global.scss";
+
+@keyframes openModal {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    @include flex(row, center, center);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes closeModal {
+  0% {
+    @include flex(row, center, center);
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    @include flex(row, center, center);
+  }
+}
+
+.modal-on {
+  animation: openModal 0.5s, ease-in-out;
+  @include flex(row, center, center);
+}
+
+.modal-off {
+  animation: closeModal 0.5s, ease-in-out;
+  display: none;
+}
+
+.mini_menu {
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  text-decoration: none;
+  box-shadow: 0px 4px 24.2px -7px #00000040;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  width: 20%;
+  height: 110%;
+  border-radius: 20px;
+
+  &__content {
+    @include flex(row, 0, center);
+    gap: 20px;
+  }
+  &__text_block-text {
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  &__img_block-img {
+    width: 40px;
+    height: 40px;
+  }
+}
